@@ -36,10 +36,12 @@ if(number === 0){
 //Частина 3
 let years = prompt("Hello! Please write the year!");
 
-if (years <= 0) {
-    alert("You write uncorrect year")
-}else {
-    alert ("The year "+years+" is the "+parseInt(years / 100)  + " century of our era")
+if (years <= 0){
+    alert("You write uncorrect year");
+}else if(years>=1 && years <=100){
+    alert ("The year "+years+" is the 1 century of our era");
+}else{
+    alert ("The year "+years+" is the "+parseInt(years / 100)  + " century of our era");
 }
 
 
