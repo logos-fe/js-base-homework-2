@@ -1,7 +1,7 @@
 // 1
 
 
-function tryRepeat () {
+//function tryRepeat () {
     let num = prompt('Write even number')
     if (+num % 2 == 0) {
         alert("Nice! " + num)
@@ -31,13 +31,12 @@ if (+rentalDays >= 7) {
 
  let userYear = prompt('What year U need?')
 
- if (+userYear <= 0) {
+ if (Number(userYear) <= 0) {
     alert('No, other direction...')
  } else {
-let century = (+userYear - +userYear % 100) / 100 + 1 
-console.log(+userYear % 100)
+let century = Math.trunc((Number(userYear) / 100)) + 1 
 alert('Століття ' + century)
  }
- tryRepeat()
-}
-tryRepeat()
+ //tryRepeat()
+//}
+//tryRepeat()
