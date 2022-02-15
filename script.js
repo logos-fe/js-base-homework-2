@@ -1,12 +1,12 @@
  //Частина 1
 let number = prompt("Напишіть натуральне число");
 let division = number % 2;
-if(number === 0){
-    alert("Ви ввели ні парне, ні непарне  число!")///Як зробити так що написало що нуль не парний ,ні не парний??
-}else if(division === 0){
-    alert("Ви ввели парне число!")
-}  else if(division !=0){
+if(number == 0){
+    alert("Ви ввели ні парне, ні непарне  число!")
+} else if(division != 0){
     alert("Ви ввели непарне число!")
+} else{
+    alert("Ви ввели парне число!")
 }
 
 
@@ -41,7 +41,7 @@ if (years <= 0){
 }else if(years>=1 && years <=100){
     alert ("The year "+years+" is the 1 century of our era");
 }else{
-    alert ("The year "+years+" is the "+parseInt(years / 100)  + " century of our era");
+    alert ("The year "+years+" is the "+parseInt((years / 100)+ 1)  + " century of our era!");
 }
 
 
