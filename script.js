@@ -8,16 +8,16 @@
      alert("The number is odd.") 
 }
 //  task = 2
-let number1 = prompt("Enter rental days: ")
-let number2 = number1 * 40
-if (number1 > 0 && number1 <= 3) {
-    alert (`The cost of your rent: ${number2}$`)
+let days = prompt("Enter rental days: ")
+let price = days * 40
+if (days > 0 && days <= 3) {
+    alert (`The cost of your rent: ${price}$`)
 }
-else if (number1 <= 7) {
-    alert(`The cost of your rent: ${number2 - 20}$`)
+else if (days <= 7) {
+    alert(`The cost of your rent: ${price - 20}$`)
 } 
 else {    
-    alert(`The cost of your rent: ${number2 -50}$`)
+    alert(`The cost of your rent: ${price -50}$`)
 } 
 // task = 3
 let year = prompt("Enter your year: ")
